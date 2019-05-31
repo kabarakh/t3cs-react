@@ -4,8 +4,7 @@ function DateList() {
   let [dateList, setDateList] = useState([]);
 
   const addDate = function() {
-    dateList.push(new Date());
-    setDateList(dateList);
+    setDateList([...dateList, new Date()]);
   };
 
   return (
