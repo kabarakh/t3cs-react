@@ -12,8 +12,8 @@ function DateList() {
       <button onClick={addDate}>Add current Date</button>
 
       <ul>
-        {dateList.map(date => (
-          <li>{date.toLocaleString()}</li>
+        {dateList.map((date, index) => (
+          <li key={index}>{date.toLocaleString()}</li>
         ))}
       </ul>
     </React.Fragment>
