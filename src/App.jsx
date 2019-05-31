@@ -2,6 +2,7 @@ import React from "react";
 
 import "./App.css";
 import RedirectButton from "./RedirectButton";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Counter />
+        <Counter initialValue={4} />
         <RedirectButton targetUrl="https://t3cs.de">
           To the T3CS page
         </RedirectButton>
