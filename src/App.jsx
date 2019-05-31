@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import RedirectButton from "./RedirectButton";
 import Counter from "./Counter";
+import DateList from "./DateList";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         <RedirectButton targetUrl="https://t3cs.de">
           To the T3CS page
         </RedirectButton>
+
+        <DateList />
       </header>
     </div>
   );
