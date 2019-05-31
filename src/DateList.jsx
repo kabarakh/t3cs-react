@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
 function DateList() {
-  let [dateList] = useState([]);
+  let [dateList, setDateList] = useState([]);
 
   const addDate = function() {
     dateList.push(new Date());
+    setDateList(dateList);
   };
 
   return (
@@ -13,7 +14,7 @@ function DateList() {
 
       <ul>
         {dateList.map(date => (
-          <li>date.toLocaleString()</li>
+          <li>{date.toLocaleString()}</li>
         ))}
       </ul>
     </React.Fragment>
